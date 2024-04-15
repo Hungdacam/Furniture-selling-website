@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+
+}
+
+input[type=text] {
+    outline: none;
+}
+
+a{
+    text-decoration:none;
+}
+
+header {
+    width: 100%;
+    height: 5em;
+}
+
+header li{
+    font-weight: bold;
+}
+#header-container {
+    height: 5em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(52, 58, 58, 0.384);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    color: white;
+}
+
+.dropdown button {
+    border-radius: 0;
+}
+
+.dropdown-menu {
+    border-radius: 0;
+    --bs-dropdown-link-active-bg: rgba(133, 133, 97, 0.822);
+    --bs-dropdown-link-active-color: black;
+}
+
+.btn-group:hover .dropdown-menu {
+    display: block;
+}
+
+.header-menu {
+    margin-left: 2rem;
+    display: flex;
+}
+
+.header-menu button {
+    height: 5rem;
+    width: 8rem;
+    border: none;
+    background-color: rgba(240, 248, 255, 0);
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+
+.header-menu button:hover {
+    background-color: rgba(133, 133, 97, 0.822);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.menu-button {
+    position: relative;
+    display: none;
+    cursor: pointer;
+}
+
+.line1,
+.line2,
+.line3 {
+    height: 2px;
+    width: 20px;
+    background-color: black;
+    margin: 3px 0;
+    transition: 0.5s;
+}
+
+.change .line1 {
+    transform: translate(0, 5px) rotate(-45deg);
+}
+
+.change .line2 {
+    opacity: 0;
+}
+
+.change .line3 {
+    transform: translate(0, -5px) rotate(45deg);
+}
+
+.change #menu-button-dropdown{
+    display: block;
+}
+
+#menu-button-dropdown{
+    width: 5rem;
+    display: none;
+    position: absolute;
+    top: 3rem;
+    left: -1rem;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding: 8px;
+}
+
+
+#menu-button-dropdown a{
+    color: #161616;
+}
+
+#menu-button-dropdown div:hover{
+    background-color: #dddebd;
+}
+
+header h1 a{
+    font-weight: bold;
+    color: white;
+}
+
+
+
+#search-product {
+    width: 20rem;
+    height: 3em;
+    border: none;
+    background-color: rgba(89, 99, 109, 0.473);
+    padding-left: 5%;
+    box-sizing: border-box;
+    transition: 0.5s ease;
+    color: white;
+    font-weight: bold;
+}
+
+::placeholder{
+    color: #f7f7f8;
+    opacity: 50%;
+}
+
+#search-render {
+    display: block;
+}
+
+.material-symbols-outlined {
+    padding: 1rem;
+}
+
+.search-box {
+    width: 24rem;
+    display: flex;
+    align-items: center;
+    background-color: rgba(89, 99, 109, 0.473);
+    margin-right: 2rem;
+}
+
+.search-box button {
+    border: none;
+    background-color: rgba(89, 99, 109, 0);
+}
+
+.search-box button:hover .material-symbols-outlined {
+    transform: scale(1.5);
+    color: wheat;
+}
