@@ -36,6 +36,7 @@ window.onload = () => { onScroll(); }
 let dataSearch = document.getElementById('search-product');
 let dataSearchStorage = localStorage.getItem('search-keyword') ? JSON.parse(localStorage.getItem('search-keyword')) : [];
 function getDataSearchProduct() {
+
     if (dataSearch.value != "") {
         if (dataSearchStorage.length < 5) {
             dataSearchStorage.unshift({
@@ -370,7 +371,6 @@ function goToHome() {
 function exData(){
     
 }
-
 
 
 

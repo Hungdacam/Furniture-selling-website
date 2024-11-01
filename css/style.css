@@ -142,7 +142,7 @@ header h1 a{
 }
 .log a{
     margin-right: 10px;
-    font-size: 23px;
+    font-size: 18px;
     color: white;
     font-weight: bold;
 }
@@ -179,7 +179,7 @@ header h1 a{
     font-size: 20px;
 }
 .info-login{
-    margin-top: 20px;
+    margin-top: 10px;
     font-size:22px;
 }
 .footer-login{
@@ -885,12 +885,16 @@ footer hr {
 }
 
 .shop-main a {
-    text-decoration: none;
+    text-decoration:none;
     color: white;
     margin: 1rem;
-
+    font-size: 20px; 
+    
 }
-
+.shop-main a:hover{
+    font-size:23px;
+    color:chocolate;
+}
 .product-main {
     padding: 2rem;
     display: flex;
